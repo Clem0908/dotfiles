@@ -216,7 +216,7 @@ bar {
 
 include /etc/sway/config.d/*
 
-input 1 {
+input * {
 	repeat_delay 600
 	repeat_rate 25
 	xkb_layout "fr"
