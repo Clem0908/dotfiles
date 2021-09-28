@@ -215,3 +215,12 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
+input 1 {
+	repeat_delay 600
+	repeat_rate 25
+	xkb_layout "fr"
+	xkb_model "pc104"
+	xkb_variant "latin9"
+	xkb_numlock "enabled"
+}
