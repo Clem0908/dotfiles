@@ -23,7 +23,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+# output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # Example configuration:
 #
@@ -221,7 +221,19 @@ input * {
 	repeat_rate 25
 	xkb_layout "fr"
 	xkb_model "pc104"
-	xkb_variant "latin9"
 	xkb_numlock "enabled"
 	left_handed enabled
 }
+
+Output "Samsung Electric Company SyncMaster HSCX805716" {
+	mode 1280x1024@60.020Hz
+	pos 0 1024
+}
+
+Output "Samsung Electric Company SAMSUNG 0x00000000" {
+	mode 1366x768@59.790Hz
+	pos 1281 1080
+}
+
+output * bg /home/clement/Images/LP_night_wallpaper.jpeg fill
+
