@@ -7,9 +7,4 @@ set number
 set mouse=a
 filetype plugin on
 filetype indent on
-
-call plug#begin('/home/clement/.vim/plugged')
-
-Plug 'chclouse/tiger-vim'
-
-call plug#end()
+set guifont=Ubuntu\ Mono\ Regular\ 14
