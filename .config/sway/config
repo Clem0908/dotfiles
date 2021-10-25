@@ -23,7 +23,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-# output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /home/clement/Images/LP_night_wallpaper.jpg fit
 #
 # Example configuration:
 #
@@ -35,11 +35,11 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
+exec swayidle -w \
+          timeout 300 'swaylock -f -c 000000' \
+          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+          before-sleep 'swaylock -f -c 000000'
+
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
@@ -82,7 +82,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'Voulez-vous quitter Sway ?' -b 'Oui, quitter.' 'swaymsg exit'
 #
 # Moving around:
 #
@@ -201,15 +201,17 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position top
+    position bottom
+    height 0
+    font Ubuntu
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
+    status_command while ~/.config/sway/status.sh; do sleep 1; done
 
     colors {
         statusline #ffffff
-        background #323232
+        background #000000
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
@@ -218,22 +220,9 @@ include /etc/sway/config.d/*
 
 input * {
 	repeat_delay 600
-	repeat_rate 25
+	repeat_rate 20
 	xkb_layout "fr"
-	xkb_model "pc104"
-	xkb_numlock "enabled"
+	xkb_model "pc102"
+	xkb_numlock enabled
 	left_handed enabled
 }
-
-Output "Samsung Electric Company SyncMaster HSCX805716" {
-	mode 1280x1024@60.020Hz
-	pos 0 1024
-}
-
-Output "Samsung Electric Company SAMSUNG 0x00000000" {
-	mode 1366x768@59.790Hz
-	pos 1281 1080
-}
-
-output * bg /home/clement/Images/LP_night_wallpaper.jpeg fill
-
