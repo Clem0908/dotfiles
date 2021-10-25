@@ -225,4 +225,5 @@ input * {
 	xkb_model "pc102"
 	xkb_numlock enabled
 	left_handed enabled
+	tap enabled
 }
