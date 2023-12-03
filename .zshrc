@@ -24,3 +24,11 @@ alias ll='ls -alh --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+# Keyboard special keys
+bindkey  "^[[1~"   beginning-of-line
+bindkey  "^[[2~"   overwrite-mode
+bindkey  "^[[3~"   delete-char
+bindkey  "^[[4~"   end-of-line
+bindkey  "^[[5~"   beginning-of-buffer-or-history
+bindkey  "^[[6~"   end-of-buffer-or-history
