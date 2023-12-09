@@ -1,4 +1,3 @@
-
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/clement/.zshrc'
 
@@ -32,3 +31,8 @@ bindkey  "^[[3~"   delete-char
 bindkey  "^[[4~"   end-of-line
 bindkey  "^[[5~"   beginning-of-buffer-or-history
 bindkey  "^[[6~"   end-of-buffer-or-history
+
+# Auto correction [nyae] -- 
+# correct (suggest on commands)
+# correct_all (suggest on commands and arguments)
+setopt correct_all
