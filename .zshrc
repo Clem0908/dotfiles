@@ -13,7 +13,12 @@ unsetopt beep
 # End of lines configured by zsh-newuser-install
 
 # Prompt
-PROMPT='%F{#c40000}%n%F{#a9a9a9}@%F{#d500f9}%m%F{#a9a9a9}:%F{#2554c7}%10d%F{#a9a9a9}$ %F{ffffff}'
+if [ $(id -u $USER) -eq 0 ]
+then
+	PROMPT='%F{#0000c4}%n%F{#a9a9a9}@%F{#d500f9}%m%F{#a9a9a9}:%F{#2554c7}%10d%F{#a9a9a9}# %F{ffffff}'
+else
+	PROMPT='%F{#c40000}%n%F{#a9a9a9}@%F{#d500f9}%m%F{#a9a9a9}:%F{#2554c7}%10d%F{#a9a9a9}$ %F{ffffff}'
+fi
 
 # Alias
 
@@ -31,6 +36,9 @@ bindkey  "^[[3~"   delete-char
 bindkey  "^[[4~"   end-of-line
 bindkey  "^[[5~"   beginning-of-buffer-or-history
 bindkey  "^[[6~"   end-of-buffer-or-history
+
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
 
 # Auto correction [nyae] -- 
 # correct (suggest on commands)
