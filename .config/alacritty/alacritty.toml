@@ -1,0 +1,17 @@
+[colors.normal]
+black = "#000000"
+blue = "#0000ff"
+cyan = "#8abeb7"
+green = "#00ff00"
+magenta = "#b294bb"
+red = "#ff0000"
+white = "#ffffff"
+yellow = "#f0c674"
+
+[colors.primary]
+background = "#000000"
+foreground = "#ffffff"
+
+[shell]
+args = ["--login"]
+program = "/bin/zsh"
