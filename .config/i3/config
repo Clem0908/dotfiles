@@ -200,3 +200,6 @@ exec --no-startup-id /usr/lib/pam_kwallet_init
 
 # Lock Ctrl+Alt+l
 bindsym Control+Mod1+l exec i3lock
+
+# Lock & suspend Ctrl+Alt+s
+bindsym Control+Mod1+s exec i3lock && systemctl suspend
