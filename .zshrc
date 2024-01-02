@@ -13,7 +13,7 @@ unsetopt beep
 # End of lines configured by zsh-newuser-install
 
 # Prompt
-if [ $(id -u $USER) -eq 0 ]
+if [ $(id -u) -eq 0 ]
 then
 	PROMPT='%F{#0000c4}%n%F{#a9a9a9}@%F{#d500f9}%m%F{#a9a9a9}:%F{#2554c7}%10d%F{#a9a9a9}# %F{ffffff}'
 else
