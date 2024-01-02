@@ -15,3 +15,13 @@ foreground = "#ffffff"
 [shell]
 args = ["--login"]
 program = "/bin/zsh"
+
+[scrolling]
+history = 1000
+
+[keyboard]
+bindings = [{key = "T",mods = "Control|Shift", action = "CreateNewWindow"}]
+
+[font]
+normal = {family = "Noto Sans Mono", style = "Regular"}
+size = 12
