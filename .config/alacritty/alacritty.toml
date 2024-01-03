@@ -25,3 +25,6 @@ bindings = [{key = "T",mods = "Control|Shift", action = "CreateNewWindow"}]
 [font]
 normal = {family = "Noto Sans Mono", style = "Regular"}
 size = 12
+
+[window]
+startup_mode="Maximized"
