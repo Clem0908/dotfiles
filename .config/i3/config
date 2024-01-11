@@ -185,12 +185,12 @@ bar {
         status_command i3status
 }
 
-#bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10% && $refresh_i3status
-#bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%- && $refresh_i3status
-bindsym Control+F6 exec pactl set-sink-volume 0 -1% && $HOME/.config/i3/volume.sh
-bindsym Control+F5 exec pactl set-sink-mute 0 toggle 
-bindsym Control+F7 exec pactl set-sink-volume 0 +1% && $HOME/.config/i3/volume.sh
-#bindsym Control+F1 exec pactl set-source-mute 1 toggle
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10% && $refresh_i3status
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%- && $refresh_i3status
+bindsym XF86_AudioLowerVolume exec pactl set-sink-volume 0 -1% && $HOME/.config/i3/volume.sh
+bindsym XF86_AudioMute exec pactl set-sink-mute 0 toggle 
+bindsym XF86_AudioRaiseVolume exec pactl set-sink-volume 0 +1% && $HOME/.config/i3/volume.sh
+bindsym XF86_AudioMicMute exec pactl set-source-mute 1 toggle
 
 # Wallpaper (requires feh package)
 exec --no-startup-id feh --bg-fill /home/clement/Images/Wallpapers/wallpaper.jpg
@@ -199,7 +199,7 @@ exec --no-startup-id feh --bg-fill /home/clement/Images/Wallpapers/wallpaper.jpg
 exec --no-startup-id /usr/lib/pam_kwallet_init
 
 # Lock Ctrl+Alt+l
-bindsym Control+Mod1+l exec i3lock
+bindsym Control+Mod1+l exec i3lock --nofork -c 000000
 
 # Lock & suspend Ctrl+Alt+s
 bindsym Control+Mod1+s exec i3lock && systemctl suspend
@@ -210,7 +210,5 @@ exec numlockx on
 # Auto block all RF cards
 exec rfkill block all
 
-#Left mouse button
-exec xmodmap -e "pointer = 3 2 1"
-
-exec /usr/bin/dunst 
+# No screen turned off after a while being inactive
+exec --no-startup-id xset off -dpms 
