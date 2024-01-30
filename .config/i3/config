@@ -187,10 +187,13 @@ bar {
 
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10% && $refresh_i3status
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%- && $refresh_i3status
-bindsym XF86_AudioLowerVolume exec pactl set-sink-volume 0 -1% && $HOME/.config/i3/volume.sh
-bindsym XF86_AudioMute exec pactl set-sink-mute 0 toggle 
-bindsym XF86_AudioRaiseVolume exec pactl set-sink-volume 0 +1% && $HOME/.config/i3/volume.sh
-bindsym XF86_AudioMicMute exec pactl set-source-mute 1 toggle
+
+#bindsym Control+F6 exec amixer -q sset Master 1%- && $HOME/.config/i3/volume_down.sh
+#bindsym Control+F1 exec amixer -q sset Capture toggle && $HOME/.config/i3/mic_mute.sh
+bindsym XF86_AudioLowerVolume exec amixer -q sset Master 1%- && $HOME/.config/i3/volume_down.sh
+bindsym XF86_AudioMute exec amixer -q sset Master toggle && $HOME/.config/i3/volume_mute.sh
+bindsym XF86_AudioRaiseVolume exec amixer -q sset Master 1%+ && $HOME/.config/i3/volume_up.sh
+bindsym XF86_AudioMicMute exec amixer -q sset Capture toggle && $HOME/.config/i3/mic_mute.sh
 
 # Wallpaper (requires feh package)
 exec --no-startup-id feh --bg-fill /home/clement/Images/Wallpapers/wallpaper.jpg
