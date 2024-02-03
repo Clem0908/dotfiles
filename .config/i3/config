@@ -202,7 +202,7 @@ exec --no-startup-id feh --bg-fill /home/clement/Images/Wallpapers/wallpaper.jpg
 exec --no-startup-id /usr/lib/pam_kwallet_init
 
 # Lock Ctrl+Alt+l
-bindsym Control+Mod1+l exec i3lock --nofork -c 000000
+bindsym Control+Mod1+l exec i3lock -c 000000
 
 # Lock & suspend Ctrl+Alt+s
 bindsym Control+Mod1+s exec i3lock && systemctl suspend
