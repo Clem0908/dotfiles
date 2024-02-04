@@ -205,7 +205,7 @@ exec --no-startup-id /usr/lib/pam_kwallet_init
 bindsym Control+Mod1+l exec i3lock -c 000000
 
 # Lock & suspend Ctrl+Alt+s
-bindsym Control+Mod1+s exec i3lock && systemctl suspend
+bindsym Control+Mod1+s exec i3lock -c 000000 && systemctl suspend
 
 # Activate NumLock (requires numlockx package)
 exec numlockx on
@@ -214,4 +214,7 @@ exec numlockx on
 exec rfkill block all
 
 # No screen turned off after a while being inactive
-exec --no-startup-id xset off -dpms 
+exec xset off -dpms 
+
+# Dunst 
+exec /usr/bin/dunst
