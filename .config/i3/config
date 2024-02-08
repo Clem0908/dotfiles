@@ -218,3 +218,6 @@ exec xset off -dpms
 
 # Dunst 
 exec /usr/bin/dunst
+
+# Left-handed mouse, needs xorg-xmodmap
+#exec xmodmap -e pointer = 3 2 1
