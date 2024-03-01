@@ -6,18 +6,26 @@ general {
 
 order += "wireless wlp4s0"
 order += "ethernet eno1"
+order += "ethernet enp6s0f4u2"
 order += "battery 0"
 order += "cpu_temperature 0"
+order += "disk /"
+order += "memory"
 order += "tztime paris"
 
 wireless wlp4s0 {
-	format_up = "Wi-Fi : (%quality @ %essid, %bitrate) %ip"
-	format_down = "Wi-Fi : non connecté"
+	format_up = "W: (%quality @ %essid, %bitrate) %ip"
+	format_down = "W: non connecté"
 }
 
 ethernet eno1 {
-	format_up = "Ethernet : %ip (%speed)"
-	format_down = "Ethernet : non connecté"
+	format_up = "E: %ip (%speed)"
+	format_down = "E: non connecté"
+}
+
+ethernet enp6s0f4u2 {
+	format_up = "E-USB: %ip"
+	format_down = ""
 }
 
 battery 0 {
@@ -37,6 +45,14 @@ tztime paris {
 }
 
 cpu_temperature 0 {
-	format = "CPU : %degrees °C"
+	format = "CPU: %degrees°C"
 	path = "/sys/module/k10temp/drivers/pci:k10temp/0000:00:18.3/hwmon/hwmon4/temp1_input"
+}
+
+disk "/" {
+	format = "DD: %avail"
+}
+
+memory {
+	format = "R: %available"
 }
