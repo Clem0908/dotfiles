@@ -1,0 +1,78 @@
+general {
+	colors = true
+	interval = 1
+	output_format = "i3bar"
+}
+
+order += "wireless wlp4s0"
+order += "ethernet eno1"
+order += "ethernet enp6s0f4u2"
+order += "battery 0"
+order += "cpu_usage"
+order += "cpu_temperature 0"
+order += "read_file gpu_load"
+order += "read_file gpu_temp"
+order += "disk /"
+order += "memory"
+order += "tztime paris"
+
+wireless wlp4s0 {
+	format_up = "%essid (%bitrate) %ip %quality"
+	format_down = ""
+}
+
+ethernet eno1 {
+	format_up = "%ip (%speed)"
+	format_down = ""
+}
+
+ethernet enp6s0f4u2 {
+	format_up = "E-USB : %ip"
+	format_down = ""
+}
+
+battery 0 {
+	last_full_capacity = true
+	format = "%status %percentage %remaining %consumption"
+	format_down = ""
+	status_chr = "󰂏 "
+	status_bat = "󰂌 "
+	status_unk = "󰂑 "
+	status_idle = "󱈑 "
+	status_full = "󱟢 "
+	path = "/sys/class/power_supply/BAT%d/uevent"
+	low_threshold = 10
+}
+
+tztime paris {
+	format = " %H:%M:%S %d-%m-%Y "
+}
+
+cpu_usage {
+	format = " %usage"
+}
+
+cpu_temperature 0 {
+	format = " %degrees°C"
+	path = "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon4/temp1_input"
+}
+
+read_file gpu_load {
+	format = " %content"
+	color_good = "#FFFFFF"
+	path = "/home/clement/.config/i3status/gpu_load"
+}
+
+read_file gpu_temp {
+	format = " %content°C"
+	color_good = "#FFFFFF"
+	path = "/home/clement/.config/i3status/gpu_temp"
+}
+
+disk "/" {
+	format = " %avail"
+}
+
+memory {
+	format = " %available"
+}
