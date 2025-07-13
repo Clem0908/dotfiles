@@ -217,9 +217,13 @@ exec --no-startup-id /usr/lib/pam_kwallet_init
 
 # Lock Ctrl+Alt+l
 bindsym Control+Mod1+l exec i3lock -c 000000
+# xsecurelock variant
+# bindsym Control+Mod1+l exec env XSECURELOCK_SAVER=saver_mpv XSECURELOCK_PASSWORD_PROMPT=time_hex xsecurelock
 
 # Lock & suspend Ctrl+Alt+s
 bindsym Control+Mod1+s exec i3lock -c 000000 && systemctl suspend
+# xsecurelock variant
+# bindsym Control+Mod1+s exec systemctl suspend && env XSECURELOCK_SAVER=saver_mpv XSECURELOCK_PASSWORD_PROMPT=time_hex xsecurelock 
 
 # Activate NumLock (requires numlockx package)
 exec numlockx on
