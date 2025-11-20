@@ -262,3 +262,6 @@ client.background       #000000
 
 # Popup management
 popup_during_fullscreen smart
+
+# Icons in title bar for applications
+for_window [all] title_window_icon on
