@@ -3,11 +3,12 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
-font pango:NotoSans Regular 12
+font pango:NotoSansNerdFont Regular 12
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
-set $mod Mod4
+set $mod Mod1
 # Home row direction keys, like vim
 set $left h
 set $down j
@@ -26,7 +27,7 @@ set $menu wmenu-run
 #
 # Example configuration:
 #
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
+output HDMI-A-1 resolution 1920x1080
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 # output * bg /home/clement/Images/LP_night_wallpaper.jpg fit
@@ -68,7 +69,7 @@ exec swayidle -w \
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'Voulez-vous quitter Sway ?' -b 'Oui, quitter.' 'swaymsg exit'
+    bindsym $mod+Shift+e exec swaynag -t warning -m "Voulez-vous quitter Sway ?" -b "Oui, quitter." 'swaymsg exit'
 #
 # Moving around:
 #
@@ -189,7 +190,7 @@ bindsym $mod+r mode "resize"
 bar {
     position bottom
     height 0
-    font NotoSans
+    font NotoSansNerdFont
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
