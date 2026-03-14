@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 9.0, SVG Export Plug-In  -->
+
+<svg
+   width="1024pt"
+   height="768pt"
+   viewBox="0 0 1024 768"
+   xml:space="preserve"
+   version="1.1"
+   id="svg19"
+   sodipodi:docname="wave.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs19" /><sodipodi:namedview
+   id="namedview19"
+   pagecolor="#505050"
+   bordercolor="#eeeeee"
+   borderopacity="1"
+   inkscape:showpageshadow="0"
+   inkscape:pageopacity="0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#505050"
+   inkscape:document-units="pt"
+   inkscape:zoom="0.54206916"
+   inkscape:cx="598.6321"
+   inkscape:cy="519.30643"
+   inkscape:window-width="1914"
+   inkscape:window-height="996"
+   inkscape:window-x="0"
+   inkscape:window-y="38"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg19" />
+	<g
+   id="Layer_x0020_3"
+   style="clip-rule:nonzero;display:inline;fill-rule:nonzero;stroke:#000000;stroke-miterlimit:4">
+		<radialGradient
+   id="aigrd1"
+   cx="963.69531"
+   cy="79.861298"
+   r="1436.6206"
+   fx="963.69531"
+   fy="79.861298"
+   gradientTransform="matrix(0.4269,0,0,0.6347,116.5728,139.3921)"
+   gradientUnits="userSpaceOnUse">
+			<stop
+   offset="0"
+   style="stop-color:#000000;stop-opacity:0;"
+   id="stop1" />
+			<stop
+   offset="0.1366"
+   style="stop-color:#98C1DB"
+   id="stop2" />
+			<stop
+   offset="0.3156"
+   style="stop-color:#88B1CD"
+   id="stop3" />
+			<stop
+   offset="0.5182"
+   style="stop-color:#6D96B6"
+   id="stop4" />
+			<stop
+   offset="0.7382"
+   style="stop-color:#477196"
+   id="stop5" />
+			<stop
+   offset="0.9698"
+   style="stop-color:#17426E"
+   id="stop6" />
+			<stop
+   offset="1"
+   style="stop-color:#103B68"
+   id="stop7" />
+		</radialGradient>
+		<path
+   style="fill:#000000;stroke:none;fill-opacity:1"
+   d="M 1024,768 H 0 V 0 h 1024 z"
+   id="path7" />
+		<radialGradient
+   id="aigrd2"
+   cx="423.1416"
+   cy="473.29691"
+   r="799.88422"
+   fx="423.1416"
+   fy="473.29691"
+   gradientTransform="matrix(0.7558,0,0,1,81.3024,0)"
+   gradientUnits="userSpaceOnUse">
+			<stop
+   offset="0"
+   style="stop-color:#FFFFFF"
+   id="stop8" />
+			<stop
+   offset="0.191"
+   style="stop-color:#FBFCFE"
+   id="stop9" />
+			<stop
+   offset="0.3995"
+   style="stop-color:#EDF5F9"
+   id="stop10" />
+			<stop
+   offset="0.6161"
+   style="stop-color:#D8E8F2"
+   id="stop11" />
+			<stop
+   offset="0.8371"
+   style="stop-color:#B9D7E9"
+   id="stop12" />
+			<stop
+   offset="1"
+   style="stop-color:#9EC7E0"
+   id="stop13" />
+		</radialGradient>
+		<path
+   style="display:none;opacity:0.25;fill:#c40000;fill-opacity:1;stroke:none"
+   d="m 2.036,599.854 v 19.172 c 0,0 123.492,-149.83 358.881,-149.83 279.494,0 306.507,201.039 663.083,201.039 v -45.514 c -339.801,0 -394.867,-175.12 -627.687,-175.12 -267.578,0 -394.277,150.253 -394.277,150.253 z"
+   id="path13" />
+		<radialGradient
+   id="aigrd3"
+   cx="423.1416"
+   cy="334.99899"
+   r="816.38452"
+   fx="423.1416"
+   fy="334.99899"
+   gradientTransform="matrix(0.7558,0,0,1,81.3024,0)"
+   gradientUnits="userSpaceOnUse">
+			<stop
+   offset="0"
+   style="stop-color:#ffffff;stop-opacity:1;"
+   id="stop14" />
+			<stop
+   offset="0.191"
+   style="stop-color:#FBFCFE"
+   id="stop15" />
+			<stop
+   offset="0.3995"
+   style="stop-color:#EDF5F9"
+   id="stop16" />
+			<stop
+   offset="0.6161"
+   style="stop-color:#D8E8F2"
+   id="stop17" />
+			<stop
+   offset="0.8371"
+   style="stop-color:#B9D7E9"
+   id="stop18" />
+			<stop
+   offset="1"
+   style="stop-color:#9EC7E0"
+   id="stop19" />
+		</radialGradient>
+		<path
+   style="display:none;opacity:0.25;fill:#c40000;fill-opacity:1;stroke:none"
+   d="m 2.036,534.061 v 37.449 c 0,0 150.311,-175.414 358.881,-175.414 277.097,0 308.384,201.033 663.083,201.033 v -173.44 c -339.801,0 -408.33,-120.23 -613.917,-120.23 -205.594,0 -408.046,230.602 -408.046,230.602 z"
+   id="path19" />
+	</g>
+	<g
+   id="Layer_x0020_1"
+   style="clip-rule:nonzero;display:inline;fill-rule:nonzero;stroke:#000000;stroke-miterlimit:4">
+	</g>
+	<g
+   id="Layer_x0020_2"
+   style="clip-rule:nonzero;display:inline;fill-rule:nonzero;stroke:#000000;stroke-miterlimit:4">
+	</g>
+</svg>
