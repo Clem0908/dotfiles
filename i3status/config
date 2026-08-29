@@ -8,10 +8,8 @@ order += "wireless wlp4s0"
 order += "ethernet eno1"
 order += "ethernet enp6s0f4u2"
 order += "battery 0"
-order += "cpu_usage"
+order += "load"
 order += "cpu_temperature 0"
-order += "read_file gpu_load"
-order += "read_file gpu_temp"
 order += "disk /"
 order += "memory"
 order += "tztime paris"
@@ -48,25 +46,13 @@ tztime paris {
 	format = " %H:%M:%S %d-%m-%Y "
 }
 
-cpu_usage {
-	format = " %usage"
+load {
+	format = " %1min | %5min | %15min"
 }
 
 cpu_temperature 0 {
 	format = " %degrees°C"
 	path = "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon4/temp1_input"
-}
-
-read_file gpu_load {
-	format = " %content"
-	color_good = "#FFFFFF"
-	path = "/home/clement/.config/i3status/gpu_load"
-}
-
-read_file gpu_temp {
-	format = " %content°C"
-	color_good = "#FFFFFF"
-	path = "/home/clement/.config/i3status/gpu_temp"
 }
 
 disk "/" {
