@@ -1,8 +1,0 @@
-[Plymouth Theme]
-Name=Linux Park
-Description=Linkin Park theme for GNU/Linux
-ModuleName=script
-
-[script]
-ImageDir=/usr/share/plymouth/themes/linuxpark
-ScriptFile=/usr/share/plymouth/themes/linuxpark/linuxpark.script
